@@ -57,3 +57,28 @@ function mostrar_ocultar(valorMo){
         document.getElementById("divmo").style.display = 'none';
     }
 }
+
+function sumar(){
+    var num1, num2;
+    num1=Number(document.getElementsByName("sum_num1")[0].value);
+    num2=Number (document.getElementsByName("sum_num2")[0].value);
+    document.getElementsByName("sum_total")[0].value= num1+num2;
+}
+function restar(){
+    var num1, num2;
+    num1=Number(document.getElementsByName("res_num1")[0].value);
+    num2=Number (document.getElementsByName("res_num2")[0].value);
+    document.getElementsByName("res_total")[0].value= num1-num2;
+}
+function multiplicar(){
+    var num1, num2;
+    num1=Number(document.getElementsByName("mul_num1")[0].value);
+    num2=Number (document.getElementsByName("mul_num2")[0].value);
+    document.getElementsByName("mul_total")[0].value= num1*num2;
+}
+function dividir(){
+    var num1, num2;
+    num1=Number(document.getElementsByName("div_num1")[0].value);
+    num2=Number (document.getElementsByName("div_num2")[0].value);
+    document.getElementsByName("div_total")[0].value= num1/num2;
+}
