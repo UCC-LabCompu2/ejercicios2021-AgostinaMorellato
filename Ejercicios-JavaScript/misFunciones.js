@@ -1,6 +1,7 @@
 /**
  * Conversion de Unidades, de metros, yardas, pies y pulgadas.
  * @method cambiarUnidades
+ * @method cambioGR
  * @param  {string} id - El id de los inputos de metros, yardas, pies y pulgadas.
  * @param {number} valor - El valor de los inputs de metros, yardas, pies y pulgadas.
  * @return
@@ -33,4 +34,17 @@ function cambiarUnidades(id, valor){
         document.lasunidades.unid_pie.value = 3*valor;
         document.lasunidades.unid_pulgada.value = 36*valor;
     }
+}
+
+function cambioGR(id){
+    var grad, rad;
+    if (id=="grados"){
+        grad = document.getElementById("grados").value;
+        rad = (grad*Math.PI)/180;
+    } else if (id=="radianes"){
+        rad = document.getElementById("radianes").value;
+        grad =(rad*180)/Math.PI;
+    }
+    document.getElementById( "grados").value = grad;
+    document.getElementById("radianes").value = rad;
 }
