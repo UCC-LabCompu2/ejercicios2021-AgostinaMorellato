@@ -48,3 +48,12 @@ function cambioGR(id){
     document.getElementById( "grados").value = grad;
     document.getElementById("radianes").value = rad;
 }
+
+function mostrar_ocultar(valorMo){
+    if (valorMo=="val_mostrar"){
+        document.getElementById("divmo").style.display = 'block';
+    }
+    else if (valorMo=="val_ocultar"){
+        document.getElementById("divmo").style.display = 'none';
+    }
+}
